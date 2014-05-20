@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="Riot.js">
+		<meta name="author" content="Nadine Engelhardt, Patrick Herholz, Patrick Tomanek">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/riot.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+    <section class="" data-id="ad6d91b6cd1005d55980c497e058e63a">
+        <font style="font-size: 112px;">Riot.js</font>
+        <div>
+            <font style="font-size: 112px;">
+                <br>
+            </font>
+        </div>
+<div>
+        <font style="font-size: 112px;">
+            <br>
+        </font>
+    </div>
+<div>
+    <font style="font-size: 112px;">
+        <br>
+    </font>
+</div>
+<div class="absolute-element" style="position: absolute; width: 10px; height: 112px; z-index: 4; left: 466px; top: 468px;">
+<font style="font-size: 112px;">
+    <br>
+</font>
+</div>
+<div>
+<font style="font-size: 112px;">
+    <br>
+</font>
+</div>
+<div class="absolute-element" style="position: absolute; width: 145px; height: 46px; z-index: 4; left: 776px; top: 619px;">
+<font style="font-size: 18px;">Nadine &amp; Patrick²&nbsp;</font>
+<br>
+</div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/406368/riot.png" class="absolute-element" style="position: absolute; max-height: none; max-width: none; width: 504px; height: 504px; z-index: 4; left: -1px; top: 162px;">
+<p style="text-align: right; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; position: absolute; width: 285px; height: 46px; z-index: 4; left: 546px; top: 162px;" class="absolute-element">
+    <font color="#d9d9d9">
+        <span style="font-family: Arial;">„An
+</span>
+        <span style="font-family: Arial;">incredibly</span>
+        <span style="font-family: Arial;">
+fast,</span>
+    </font>
+</p>
+<p style="text-align: right; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; position: absolute; width: 323px; height: 46px; z-index: 4; left: 619px; top: 211px;" class="absolute-element">
+<font color="#d9d9d9">
+    <span style="font-family: Arial;">powerful </span>
+    <span style="font-family: Arial;">yet</span>
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">very</span>
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">tiny</span>
+</font>
+</p>
+<p style="text-align: right; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; position: absolute; width: 257px; height: 46px; z-index: 4; left: 549px; top: 259px;" class="absolute-element">
+<font color="#d9d9d9">
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">client</span>
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">side</span>
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">library</span>
+</font>
+</p>
+<p style="text-align: right; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; position: absolute; width: 336px; height: 46px; z-index: 4; left: 608px; top: 309px;" class="absolute-element">
+<font color="#d9d9d9">
+    <span style="font-family: Arial;">for</span>
+    <span style="font-family: Arial;"> </span>
+    <span style="font-family: Arial;">building</span>
+    <span style="font-family: Arial;"> large </span>
+    <span style="font-family: Arial;">scale</span>
+</font>
+</p>
+<p style="text-align: right; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; position: absolute; width: 280px; height: 46px; z-index: 4; left: 548px; top: 356px;" class="absolute-element">
+<font color="#d9d9d9">
+    <span style="font-family: Arial;"> web </span>
+    <span style="font-family: Arial;">applications</span>
+    <span style="font-family: Arial;">.“</span>
+</font>
+</p>
+</div>
+</section>
+<section class="" data-id="f34090e0087f2f71f27055749a1d6087">
+    <h2>Was ist Riot.js</h2>
+<div>
+    <ul>
+<li>Client-seitige MVP Bibliothek</li>
+<li>Kleiner als 1 kb minified size</li>
+<li>0,88 kb gezippte Größe</li>
+<li>Enthält Template Engine, Router-Funktion,&nbsp;<br>
+    <span>Event Library, striktes MVP-pattern</span>
+</li>
+<li>
+    <span>Änderung des Models <br>--&gt; Automatisches Updaten der Views</span>
+</li>
+<li>
+<span>Nutzt Vanilla JavaScript ohne Frameworks</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="stack" data-id="79931288b97eedec3c6f63e64a6a575a">
+    <section class="" data-id="c5d1121eb4ece14cd11342592b79ef62">
+        <h2>&nbsp;Geschwindigkeitsvergleich</h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/406424/usain-bolt.jpg" style="font-size: 64.566px; width: 452px; height: 278px; max-height: none; max-width: none; position: absolute; z-index: 4; left: 1px; top: 96px;" class="absolute-element">
+        <h2 class="absolute-element" style="position: absolute; width: 678px; height: 54px; z-index: 4; left: 225px; top: 367px; max-height: none; max-width: none;">
+        </h2>
+<p class="absolute-element" style="position: absolute; width: 391px; height: 46px; z-index: 4; left: 333px; top: 397px;">
+        <font style="font-size: 32px;">//Das muss schneller gehen!</font>
+    </p>
+<br>
+    <br>
+    <br>
+</section>
+<section class="" data-id="ed67b35967320e9f40a734d6460f1cea">
+    <div>
+    <h2 class="absolute-element" style="position: absolute; width: 729px; height: 527px; z-index: 4; left: 114px; top: 23px;">
+        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/406803/Speed.png" style="font-size: 64.566px;">
+        <br>
+    </h2>
+    <div class="absolute-element" style="position: absolute; width: 195px; height: 46px; z-index: 4; left: 14px; top: 30px;">
+        <font style="font-size: 24px;">200 repeats</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 60px;">
+        <font style="font-size: 18px;">Riot</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 80px;">
+        <font style="font-size: 18px;">Resig</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 101px;">
+        <font style="font-size: 18px;">Hogan</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 123px;">
+        <font style="font-size: 18px;">Underscore</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 147px;">
+        <font style="font-size: 18px;">Handlebars</font>
+    </div>
+        <div class="absolute-element" style="position: absolute; width: 195px; height: 46px; z-index: 4; left: 14px; top: 197px;">
+        <font style="font-size: 24px;">500 repeats</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 227px;">
+        <font style="font-size: 18px;">Riot</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 248px;">
+        <font style="font-size: 18px;">Resig</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 270px;">
+        <font style="font-size: 18px;">Hogan</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 293px;">
+        <font style="font-size: 18px;">Underscore</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 317px;">
+        <font style="font-size: 18px;">Handlebars</font>
+    </div>
+        <div class="absolute-element" style="position: absolute; width: 195px; height: 46px; z-index: 4; left: 14px; top: 368px;">
+        <font style="font-size: 24px;">5000 repeats</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 398px;">
+        <font style="font-size: 18px;">Riot</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 419px;">
+        <font style="font-size: 18px;">Resig</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 73px; height: 46px; z-index: 4; left: 114px; top: 441px;">
+        <font style="font-size: 18px;">Hogan</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 464px;">
+        <font style="font-size: 18px;">Underscore</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 114px; top: 486px;">
+        <font style="font-size: 18px;">Handlebars</font>
+    </div>
+    
+    
+       
+       
+       
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 60px;">
+        <font style="font-size: 18px;">0 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 80px;">
+        <font style="font-size: 18px;">1 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 101px;">
+        <font style="font-size: 18px;">8 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 123px;">
+        <font style="font-size: 18px;">2 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 147px;">
+        <font style="font-size: 18px;">11 ms</font>
+    </div>
+       
+       
+       
+    
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 227px;">
+        <font style="font-size: 18px;">1 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 248px;">
+        <font style="font-size: 18px;">7 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 270px;">
+        <font style="font-size: 18px;">4 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 293px;">
+        <font style="font-size: 18px;">4 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 317px;">
+        <font style="font-size: 18px;">5 ms</font>
+    </div>
+        
+        
+        
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 398px;">
+        <font style="font-size: 18px;">6 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 211px; top: 419px;">
+        <font style="font-size: 18px;">28 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 211px; top: 441px;">
+        <font style="font-size: 18px;">20 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 464px;">
+        <font style="font-size: 18px;">37 ms</font>
+    </div>
+    <div class="absolute-element" style="position: absolute; width: 50px; height: 46px; z-index: 4; left: 214px; top: 486px;">
+        <font style="font-size: 18px;">8 ms</font>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+</section>
+<section class="" data-id="78e955a06451cc111cd0d1867db3fc15">
+    <h2>MVP vs. MVC</h2>
+<div>
+    <br>
+    
+    <div class="datagrid">
+<table>
+<thead>
+<tr>
+    <th>
+<font style="font-size: 24px;">MVP</font>
+</th>
+    <th>
+<font style="font-size: 24px;">MVC</font>
+</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>
+<font style="font-size: 24px;">Zwei-Wege-Dispatching</font>
+</td>
+    <td>
+<font style="font-size: 24px;">Komponenten kommunizieren mit allen anderen (außer Model --&gt; Controller)</font>
+</td>
+</tr>
+<tr class="alt">
+<td>
+<font style="font-size: 24px;">User action geht auf View, von dort per Interface auf Presenter</font>
+</td>
+<td>
+<font style="font-size: 24px;">User action geht auf Controller</font>
+</td>
+</tr>
+<tr>
+<td>
+<font style="font-size: 24px;">Klare Interpretation</font>
+</td>
+<td>
+<font style="font-size: 24px;">Unterschiedlich interpretierbar, z.B. Rolle des Controllers</font>
+</td>
+</tr>
+<tr class="alt">
+<td>
+<font style="font-size: 24px;">Große/gute Event Library im Fokus</font>
+</td>
+<td>
+<font style="font-size: 24px;">Fokus auf Trennung der Komponenten</font>
+</td>
+</tr>
+<tr>
+<td>
+<font style="font-size: 24px;">Unittests auf Views möglich</font>
+</td>
+<td>
+<font style="font-size: 24px;">Views nicht einzeln testbar</font>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+    
+</div>
+
+
+
+
+
+</section>
+    <section class="stack" data-id="eb0ff88b2eaef14f32715ef2665e6fcf">
+        <section class="" data-id="6fa4fb45925a26168954c4543ced655e">
+            <h2>Model-View-Presenter (MVP)</h2>
+<div>
+            <br>
+        </div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/406948/MVP.png">
+        <br>
+</div>
+<div>
+        <ul>
+<li>Einfacher als MVC oder MVVM</li>
+<li>Gemeinsames Ziel:<br>Applikationslogik von View separieren</li>
+</ul>
+    </div>
+<div>
+    <br>
+</div>
+</section>
+<section class="" data-id="8a0b90a67c2bd5c64d1cf09f443d1522">
+    <h2>Model</h2>
+<div class="absolute-element" style="position: absolute; width: 848px; height: 346px; z-index: 4; left: 37px; top: 317px; max-height: none; max-width: none;">
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 686px; height: 224px; z-index: 4; left: 135px; top: 105px;">
+<ul>
+<li>Definiert Applikation</li>
+<li>Enthält Business Logic</li>
+<li>Separiert vom Rest der Anwendung durch</li>
+<li>
+<pre><code>riot.observable(object) 
+</code></pre>
+</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="887e4551d3087d51e1f110f0d19f671b">
+    <h2>Presenter</h2>
+<div>
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 449px; height: 579px; z-index: 4; left: 267px; top: 113px;">
+<ul>
+<li>Enthält eigentliche Logik</li>
+<li>Definiert Verhalten von UI<br>
+<br>
+<br>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/406681/presenter.png">
+<br>
+</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="77073dac72c3e8ec75cb2e169400037c">
+    <h2>View</h2>
+<div class="absolute-element" style="position: absolute; width: 949px; height: 368px; z-index: 4; left: 4px; top: 301px; max-height: none; max-width: none;">
+<br>
+</div>
+<div>
+    <ul>
+<li>Sichtbarer Teil</li>
+<li>"Template"-Fragmente von HTML<br>werden während Laufzeit eingefügt</li>
+<li>Variablen werden durch Template Engine eingesetzt</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="" data-id="e5ea3769e82a3ed58827311b02152730">
+    <h2>Live Demo</h2>
+<div class="absolute-element" style="position: absolute; width: 940px; height: 588.0176257128046px; z-index: 4; left: 4px; top: 100px; max-height: none; max-width: none;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/riotjs/images/408953/demo2.png">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <br>
+</div>
+</section>
+<section class="" data-id="76ecabb2c0b81ebb1428f4d5d6a24fea">
+    <h2 class="absolute-element" style="position: absolute; width: 968px; height: 130px; z-index: 4; left: -11px; top: 239px;">Vielen Dank für Eure Aufmerksamkeit!</h2>
+</section>
+</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
