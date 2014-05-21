@@ -100,3 +100,15 @@ el.on("start stop", function(type) {
  
 });
 ```
+
+* riot.render(template, data)
+
+Die Render Methode nutzt ein vorgebenen HTML-Template, um dieses mit Hilfe der gegebenen
+Daten zu rendern. Somit werden Platzhalter in dem Template durch die gewünschten Daten
+ersetzt und auf der Oberfläche dargestellt.
+
+```JavaScript
+// returns: "<h1>Hello Testuser</h1>"
+riot.render("<h1>Hello {username}</h1>", { username: 'Testuser' });
+
+```
