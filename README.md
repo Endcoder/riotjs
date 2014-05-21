@@ -32,16 +32,16 @@ Hier übernimmt der Presenter die Kommunikation zwischen View und Model in beide
 Richtungen. Hieraus resultiert eine strikte Trennung von View und Model, wodurch
 das Testen des Views mit Hilfe von Unit Tests ermöglicht wird.
 
-*Model
+* Model
 
 Das Model kennt weder den Presenter, noch den View und modelliert die Geschäftslogik.
 D.h. hier ist die Struktur der Daten modelliert, und die grundlegende Logik implementiert.
 
-*View
+* View
 
 Im View wird lediglich die Oberfläche dargestellt, und es ist lediglich für die Darstellung
 der Ein- und Ausgaben zuständig. Die Steuerung des Views erfolgt ausschließlich
 vom Presenter, in dem dieser auf Events des Views lauscht.
 
-*Presenter
+* Presenter
 
