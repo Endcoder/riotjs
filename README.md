@@ -10,9 +10,9 @@ zu bewahren.
 RIOT.JS zeichnet sich vor allem durch seine Größe aus, denn der minimierte
 Quelltext ist lediglich 1.6kb groß. Die folgende Übersicht zeigt, wie klein
 diese Bibliothek im Vergleich zu anderen wirklich ist:
-```HTML
+
 <img src="https://muut.com/m/img/riotjs/riot-size-1.6kb.png" />
-```
+
 
 Des Weiteren basiert RIOT.JS auf Vanilla Javascript, also purem
 Javascript, wodurch eine Abhängigkeit zu anderen Frameworks ausgeschlossen wird.
