@@ -112,3 +112,27 @@ ersetzt und auf der Oberfläche dargestellt.
 riot.render("<h1>Hello {username}</h1>", { username: 'Testuser' });
 
 ```
+
+## Beispiel: TODO Liste
+
+Unter <a href="http://www.3den.org/riotjs-todomvc/">diesem Link</a> ist eine Beispielanwendung
+zu finden, die eine TODO-Liste mit Hilfe von RIOT.JS zeigt.
+
+Im folgenden soll mit Hilfe von relevanten Quelltextausschnitten die Funktionsweise erläutert werden.
+Dies geschieht am Beispiel des Hinzufügens einer neuen Aufgabe.
+
+Zunächst wird im View ein neues Template definiert, welches den Aufbau und das Aussehen eines neuen Eintrages
+definiert:
+```HTML
+<template id="task-template">
+      <li id="task_{id}" data-task="{id}">
+        <div class="view todo-task">
+          <input class="toggle" type="checkbox">
+          <label>{name}</label>
+          <button class="destroy"/>
+        </div>
+        <input class="edit" value="{name}">
+      </li>
+    </template>
+```
+
