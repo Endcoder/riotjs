@@ -133,6 +133,97 @@ definiert:
         </div>
         <input class="edit" value="{name}">
       </li>
-    </template>
+</template>
 ```
+
+Anschließend wird im Model ein Objekt erzeugt, welches der Observermethode übergeben wird, um 
+das Nutzen von Events zu ermöglichen. Für das Persistieren der Aufgaben wird der Local Storage
+des Browsers genutzt, welcher in diesem Fall über das "DB"-Objekt erreichbar ist.
+```JavaScript
+function Todo() {
+    var self = $.observable(this),
+        db = DB('riot-todo'),
+        items = db.get();
+
+    self.add = function(name, done) {
+        var item = {
+          id: generateId(), name: name, done: done
+        };
+
+        items[item.id] = item;
+        self.trigger('add', item);
+    };
+	
+	// sync database
+    self.on('add remove toggle edit', function() {
+        db.put(items);
+    });
+
+	//  hier können weitere Funktionen definiert werden
+}
+```
+
+Die Add-Methode generiert ein neues Objekt mit der übergebenen
+Aufgabe, und generiert eine eindeutige ID. Anschließend wird
+das "Add" Event getriggert und gleichzeitig das erzeugte Objekt
+übergeben.
+Durch die on-Methode wird auf dieses Event gelauscht und der Eintrag persistiert.
+
+Im folgenden wird der Presenter definiert. Dieser muss zum einen darauf lauschen,
+ob in dem Eingabefeld die Entertaste gedrückt wurde, um in diesem Fall die Eingaben
+an das Model weiterzuleiten.
+Ist dies erledigt, muss der Presenter auf das "add"-Event des Models reagieren
+und das Objekt nach Vorgabe des Templates rendern:
+
+```JavaScript
+function todoPresenter(element, options) {
+    element = $(element);
+    var template = options.template,
+        todo = options.model,
+        $list = element.find('#todo-list'),
+        ENTER_KEY = 13,
+        ESC_KEY = 27;
+
+    /* Listen to user events */
+
+    element.on('keyup', '#new-todo', function(e) {
+        var val = $.trim(this.value);
+        if (val && e.which === 13) {
+            todo.add(val);
+            this.value = '';
+        }
+	}
+	
+	todo.on('add', function(item){
+        $("#main", element).show();
+        var task = $($.render(template, item));
+        $list.append(task);
+        toggle(task, !!item.done);
+    });
+```
+
+Zuletzt müssen die einzelnen Komponenten initialisiert werden:
+
+```JavaScript
+(function ($) {
+    var todo = new Todo();
+    routes({todo: todo});
+
+    // Binds the Todo Presenter
+    todoPresenter($("#todoapp"), {
+        model: todo,
+        template: $('#task-template').html(),
+    });
+
+    // Binds the Footer Presenter
+    footerPresenter($("#footer"), {
+        model: todo,
+        template: $('#footer-template').html(),
+    });
+})(jQuery);
+```
+
+
+
+
 
