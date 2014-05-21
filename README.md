@@ -54,6 +54,7 @@ und View.
 Um Webanwendungen nach dem MVP Pattern mit Hilfe von Riot.JS zu entwickeln, werden
 lediglich wenige Methoden benötigt. Hier zu zählen:
 * riot.observable(element)
+
 Die Observable Methode erlaubt es dem gewählten Objekt die Event-basierte Kommunikation
 zu nutzen, d.h. es können Events gefeuert und auf diese gelauscht werden.
 ```Javascript
@@ -75,12 +76,14 @@ var car = new Car();
 car.trigger("start")
 ```
 * riot.trigger(event[, arguments])
+
 Die Trigger Methode erlaubt es einem Objekt Events zu feuern. Hierdurch
 kann die Kommunikation zwischen Model und Presenter realisiert werden.
 ```Javascript
 el.trigger("start");
 ```
-* riot.on(event, callback) 
+* riot.on(event, callback)
+ 
 Die On-Methode bindet eine Funktion an ein Event, um so den Callback zu ermöglichen.
 D.h. wenn beispielsweise das Model ein Event feuert, kann der Presenter mit Hilfe
 der On-Methode auf dieses reagieren.
