@@ -186,13 +186,15 @@ function todoPresenter(element, options) {
 
     /* Listen to user events */
 
-    element.on('keyup', '#new-todo', function(e) {
+    element.on('keyup', '#new-todo', function(e) { // wenn Taste in Eingabefeld gedrückt
         var val = $.trim(this.value);
-        if (val && e.which === 13) {
-            todo.add(val);
-            this.value = '';
+        if (val && e.which === 13) {  // wenn Enter-Taste gedrückt
+            todo.add(val);			  // rufe Model auf, um Objekt anzulegen
+            this.value = '';		  // leere Eingabefeld
         }
 	}
+	
+	/* Listen to model events */
 	
 	todo.on('add', function(item){
         $("#main", element).show();
